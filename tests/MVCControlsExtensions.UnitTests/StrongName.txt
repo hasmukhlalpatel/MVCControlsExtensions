@@ -1,0 +1,3 @@
+sn -p MVCControlExtsTestSN.pfx MVCControlExtsTestSN.PublicKey
+
+sn -tp MVCControlExtsTestSN.PublicKey

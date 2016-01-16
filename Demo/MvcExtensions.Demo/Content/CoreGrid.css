@@ -1,0 +1,204 @@
+﻿a.gridButton {
+  margin: 2px 5px 2px 5px !important;
+  width: 60px !important;
+  height: 25px !important;
+  /*background-color:#5bc6ea !important;*/
+  text-decoration: none;
+  float: right;
+  text-align: right;
+  border: 3px solid #cccccc;
+  border-radius: 1em;
+  /*line-height: 0; 
+    font-size: 0;
+    color: transparent;*/
+}
+a.smallGridButton {
+  margin: 2px 5px 2px 5px !important;
+  width: 20px !important;
+  height: 25px !important;
+  background-color: #e5e2e2 !important;
+  text-decoration: none;
+  float: right;
+  text-align: right;
+  border-radius: 1em;
+  color: transparent;
+}
+a.gridDeleteButton {
+  background: url("../Images/DeleteButton.png") no-repeat 5px 5px;
+}
+a.gridEditButton {
+  background: url("../Images/EditButton.png") no-repeat 5px 5px;
+}
+a.gridDetailsButton {
+  background: url("../Images/DetailsButton.png") no-repeat 5px 5px;
+}
+a.gridAddNewButton {
+  background: url("../Images/AddButton.png") no-repeat 5px 5px;
+}
+a.gridAddButton {
+  margin-right: 2px !important;
+  width: 90px !important;
+  height: 25px !important;
+  background-color: #5bc6ea !important;
+  text-decoration: none;
+  float: right;
+  text-align: right;
+  background: url("../Images/AddButton.png") no-repeat 5px 5px;
+}
+input.gridSearchButton {
+  margin-right: 2px !important;
+  width: 90px !important;
+  height: 25px !important;
+  text-decoration: none;
+  text-align: right;
+  background: url("../Images/SearchButton.png") no-repeat 5px 5px;
+}
+span.gridSortAscColumn {
+  width: 16px;
+  height: 16px;
+  background: url("../Images/SortAscButton.png") no-repeat 0px 5px;
+}
+span.gridSortDescColumn {
+  background: url("../Images/SortDescButton.png") no-repeat 0px 5px;
+}
+.gridLinkPage {
+  margin: 2px !important;
+  width: 22px !important;
+  height: 22px !important;
+  background-color: #e5e2e2 !important;
+  padding-left: 0px;
+  padding-right: 0px;
+  text-decoration: none;
+  float: left;
+  text-align: center;
+  border-radius: 1em;
+}
+.gridLinkPage a:hover {
+  background: -webkit-radial-gradient(#5bc6ea, #0d8bb6) !important;
+  background: -moz-radial-gradient(#5bc6ea, #0d8bb6) !important;
+  background: -ms-radial-gradient(#5bc6ea, #0d8bb6) !important;
+  background: -o-radial-gradient(#5bc6ea, #0d8bb6) !important;
+  background: radial-gradient(#5bc6ea, #0d8bb6) !important;
+}
+.gridPageSelected {
+  margin: 2px !important;
+  width: 22px !important;
+  height: 22px !important;
+  padding-left: 0px;
+  padding-right: 0px;
+  text-decoration: none;
+  float: left;
+  text-align: center;
+  border-radius: 1em;
+  background: #5bc6ea!important;
+  background: -webkit-radial-gradient(#5bc6ea, #0d8bb6) !important;
+  background: -moz-radial-gradient(#5bc6ea, #0d8bb6) !important;
+  background: -ms-radial-gradient(#5bc6ea, #0d8bb6) !important;
+  background: -o-radial-gradient(#5bc6ea, #0d8bb6) !important;
+  background: radial-gradient(#5bc6ea, #0d8bb6) !important;
+}
+.gridFirstPage {
+  background: url("../Images/FirstButton.png") no-repeat 3px 3px;
+  color: transparent !important;
+}
+.gridLastPage {
+  background: url("../Images/LastButton.png") no-repeat 3px 3px;
+  color: transparent !important;
+}
+.gridNextPage {
+  background: url("../Images/NextButton.png") no-repeat 3px 3px;
+  color: transparent !important;
+}
+.gridPrevPage {
+  background: url("../Images/PreviousButton.png") no-repeat 3px 3px;
+  color: transparent !important;
+}
+table.gridTable {
+  border: 0.1em solid #ccc;
+  width: 100%;
+  /*tr:nth-child(even) td {        background-color: #f3f3f4;    }*/
+  /*tr:nth-child(odd) td {        background-color: #f9f9f9;    }*/
+}
+table.gridTable td {
+  padding: 0.05em 0.5em 0.01em 0.5em;
+  border: 0.1em solid #dbdbde;
+}
+table.gridTable td.gridDataAlignRight {
+  text-align: right;
+}
+table.gridTable th {
+  padding: 0.01em 0.5em 0.01em 0.5em;
+  border: 0.1em solid #dbdbde;
+}
+table.gridTable th a {
+  width: 100%;
+}
+table.gridTable tr:nth-child(even) {
+  background-color: #f3f3f4;
+}
+table.gridTable tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+tr.gridHeader {
+  height: 2em;
+  background-color: #f3f3f4;
+  background: -webkit-linear-gradient(#f3f3f4, #ebebf5) !important;
+  background: -moz-linear-gradient(#f3f3f4, #ebebf5) !important;
+  background: -ms-linear-gradient(#f3f3f4, #ebebf5) !important;
+  background: -o-linear-gradient(#f3f3f4, #ebebf5) !important;
+  background: linear-gradient(#f3f3f4, #ebebf5) !important;
+}
+tr.gridFooter {
+  height: 2em;
+  background-color: #f3f3f4;
+  background: -webkit-linear-gradient(#f3f3f4, #ebebf5) !important;
+  background: -moz-linear-gradient(#f3f3f4, #ebebf5) !important;
+  background: -ms-linear-gradient(#f3f3f4, #ebebf5) !important;
+  background: -o-linear-gradient(#f3f3f4, #ebebf5) !important;
+  background: linear-gradient(#f3f3f4, #ebebf5) !important;
+}
+tr.gridRow {
+  background-color: #f3f3f4;
+}
+tr.gridAlternatingRow {
+  background-color: #f9f9f9;
+}
+.gridSearchCell {
+  padding: 1px !important;
+}
+.gridSearchTable {
+  margin: 1px !important;
+}
+.gridSearchText {
+  width: 100px !important;
+  padding: 3px!important;
+}
+.gridPopupTextTooltip {
+  top: -10px;
+  width: 50px;
+  opacity: 0;
+  position: absolute;
+  z-index: -9999;
+  /*background-color:black;
+    color:white;
+    border-radius:5px;*/
+  -webkit-transition: opacity 0.5s;
+  -moz-transition: opacity 0.5s;
+  -ms-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+.gridPopupTextHover {
+  position: relative;
+}
+.gridPopupTextHover:hover .gridPopupTextTooltip {
+  opacity: 1;
+  width: 200px;
+  z-index: 9999;
+}
+.gridPopupTextHover:focus .gridPopupTextTooltip {
+  opacity: 1;
+  width: 200px;
+  z-index: 9999;
+}
+/*# sourceMappingURL=CoreGrid.css.map */

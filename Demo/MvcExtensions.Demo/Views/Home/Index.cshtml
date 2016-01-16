@@ -1,0 +1,100 @@
+﻿@using MVCControls.Extensions.Ko
+@model MvcExtensions.Demo.Models.HomeViewModel
+
+@{
+	ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<div id='divRoot'>
+@using (Html.BeginForm()) {
+	@Html.AntiForgeryToken()
+	@Html.ValidationSummary(true)
+    Html.SetKOBindingWithModelName(false);
+    <fieldset class="border">
+        <legend class="border">HomeViewModel</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Address)
+        </div>
+        <div class="editor-field">
+            @Html.KOPartialFor(model=>model.Address,"_Address")
+            @Html.ValidationMessageFor(model => model.Address)
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.NewsList)
+        </div>
+        <div class="editor-field">
+            @Html.KOGridFor(model => model.NewsList,
+                col => col.AddKOTextColumnFor(item => item.Summary, options: new KOBindingOptions { Enable = "canEdit()" }),
+                col => col.AddKOTextColumnFor(item => item.Description),
+                col => col.AddKODateTextColumnFor(item => item.PublishedOn),
+                col => col.AddKOTextColumnFor(item => item.Id),
+                col => col.AddColumn("X", "<input type=\"button\" value=\"Add\" onclick=\"AddNewRow(this)\" />"),
+                col => col.AddKODeleteButtonColumn("X", "Add",
+                    options: new KOBindingOptions { Click = "$parent.removeNews" },
+                    headerOptions: new KOBindingOptions { Click = "$data.addNews" }))
+            @Html.ValidationMessageFor(model => model.NewsList)
+        </div>
+        <div>
+            @Html.GridFor(model => model.NewsList,
+            col => col.AddHiddenColumnFor(x => x.Id),
+            col => col.AddTextColumnFor(x => x.Summary),
+            col => col.AddTextColumnFor(x => x.Description),
+          col => col.AddDeleteButtonColumn("Remove", true, "Add", new { onclick = "DeleteRow(this)" }, new { onclick = "AddNewRow(this)" }),
+             col => col.AddColumn("<input type=\"button\" value=\"X\" onclick=\"DeleteRow(this)\" />",
+                 "<input type=\"button\" value=\"Add\" onclick=\"AddNewRow(this)\" />"))
+        </div>
+        <p>
+            <input type="button" value="Save" onclick="saveIndex()" />
+        </p>
+        <p>
+            <input type="submit" value="Save2" />
+        </p>
+</fieldset>
+}
+    
+    <div>
+        @Html.VerticalGridFor(x => x.NewsList,
+            col => col.AddColumnFor(x => x.Description),
+            col => col.AddColumnFor(x => x.PublishedOn),
+            col => col.AddColumnFor(x => x.Summary))
+    </div>
+</div>
+
+
+@section Scripts {
+    @*generate scripts as javascript url.*@ 
+    @Html.RenderKOViewModel()
+    <script type="text/javascript">
+        
+        @*generate inline Ko viewmodel scripts*@
+        @*@Html.KOGenerateViewModel()*@
+
+        @Html.GenerateJsonModel()
+
+        window.addEventListener("load", function () {
+            KnockOutViewModel.Home.Update(model);
+            var divRoot = document.getElementById('divRoot');
+            ko.applyBindings(KnockOutViewModel.Home, divRoot);
+        });
+
+        function saveIndex() {
+            var postData = ko.toJSON(KnockOutViewModel.HomeViewModel);
+            //var url = "/{yourController}/Index";
+            var url = "/home/Index";
+            $.post(url, postData, function (returnedData) {
+                // This callback is executed if the post was successful
+            });
+            //alternatively you can use codeScript's method.
+            //postJsonData(url, postData, function(returnedData) {/*This callback is executed if the post was successful*/});
+        }
+
+        function canEdit(test) {
+            return true;
+        }
+
+    </script>
+
+}

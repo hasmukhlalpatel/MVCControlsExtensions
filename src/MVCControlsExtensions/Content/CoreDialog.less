@@ -1,0 +1,177 @@
+/*messages start*/
+
+.centerMessage(@controlWidth: 300, @controlHeight: 30,
+     @backgroundColor: darkgrey, @borderColor:grey ) {
+    display: none;
+    width: (0px + @controlWidth) !important;
+    min-height:(0px + @controlHeight) !important;
+    /*height: (0px + @controlHeight) !important;*/
+    position: fixed;
+    left: 50%;
+    top: 10%;
+    margin-left: (0px + (0- @controlWidth)/2) !important;
+    /*margin-top: (0px + (0- @controlHeight)/2) !important;*/
+    background-color: @backgroundColor;
+    border: 3px solid #000;
+    padding: 10px;
+    /*border-radius: 1em;*/
+    box-shadow: 5px 5px 7px rgba(0,0,0,.2);
+    z-index: 998;
+}
+
+
+.sodaErrorMessage{
+    .centerMessage(300, 30, rgba(255, 0, 0, 0.80), #f00);
+}
+
+.sodaSuccessMessage{
+    .centerMessage(300, 30, rgba(3, 211, 30, 0.80), #00ff21);
+}
+
+.sodaErrorMessage1 {
+    display: none;
+    width: 300px;
+    /*max-width:30%;*/
+    /*height: 30px;*/
+    border: 3px solid #000;
+    background:rgba(255, 0, 0, 0.80);
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    padding: 10px;
+    z-index: 999;
+    border-radius: 1em;
+}
+
+.sodaSuccessMessage1 {
+    display: none;
+    width: 300px;
+    /*max-width:30%;*/
+    /*height: 30px;*/
+    border: 3px solid #000;
+    background : rgba(3, 211, 30, 0.80);
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    padding: 10px;
+    z-index: 998;
+    border-radius: 1em;
+}
+
+.MainOverlayDIV{  
+    display: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:rgba(128, 128, 128, 0.40);
+    position: fixed;
+    z-index: 100000;
+}
+
+.fullScreen{  
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background-color:rgba(128, 128, 128, 0.40);
+    position: fixed;
+    border: 4px solid #00AEE7;
+}
+
+/*@centerDialogControlWidth : 500px;
+@centerDialogControlHeight : 300px;*/
+
+.center(@centerDialogControlWidth: 300, @centerDialogControlHeight: 300) {
+    width: (0px + @centerDialogControlWidth) !important;
+    height: (0px + @centerDialogControlHeight) !important;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: (0px + (0- @centerDialogControlWidth)/2) !important;
+    margin-top: (0px + (0- @centerDialogControlHeight)/2) !important;
+    background-color: darkgrey;
+    border: solid;
+    border-width: thick;
+    padding: 3px;
+    border-radius: 0.7em;
+    box-shadow: 5px 5px 7px 2px rgba(0,0,0,0.2);
+}
+
+.center300_300 {
+   .center(300, 300);
+}
+
+.center500_300 {
+   .center(500, 300);
+}
+
+.center700_500 {
+   .center(700, 500);
+}
+
+.center900_300 {
+   .center(900, 300);
+}
+
+.center900_600 {
+   .center(900, 600);
+}
+
+.center1000_800 {
+   .center(1000, 800);
+}
+
+.center1000_600 {
+   .center(1000, 600);
+}
+
+.center400_400 {
+   .center(400, 400);
+}
+
+.center300_500 {
+   .center(300, 500);
+}
+
+@buttonBorderRadius :1em;
+@roundButtonColor :#e5e2e2;
+
+.rightTop(@marginRight: -20, @marginTop: -30) {
+    margin-right: (0px + @marginRight) !important;
+    margin-top: (0px + @marginTop) !important;
+    width: 20px !important;
+    height: 25px !important;
+    background-color: @roundButtonColor !important;
+    text-decoration:none;
+    float :right;
+    text-align :right;
+    border-radius :@buttonBorderRadius;
+    color: transparent !important;
+    background :url("../Images/DeleteButton.png") no-repeat 5px 5px;
+}
+
+
+.rightTop20_30 {
+    .rightTop(-20, -30);
+}
+
+.dialogCloseButton {
+    position:absolute;
+    float: right;
+    right: -15px;
+    top: -15px;
+    width: 20px !important;
+    height: 25px !important;
+    background-color: @roundButtonColor !important;
+    text-decoration:none;
+    text-align :right;
+    border-radius :@buttonBorderRadius;
+    color: transparent !important;
+    background :url("../Images/DeleteButton.png") no-repeat 5px 5px;   
+}
+.dialogTitle{
+    font-size: medium;
+    font-weight: bold;
+}
+/*message end*/

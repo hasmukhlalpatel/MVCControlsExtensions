@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+	@Styles.Render("~/Content/ExtsCore")
+</head>
+
+<body>
+    @RenderBody()
+
+	@Scripts.Render("http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js")
+    @RenderSection("scripts", required: false)
+	@Scripts.Render("~/bundles/ExtsCore")
+</body>
+</html>
