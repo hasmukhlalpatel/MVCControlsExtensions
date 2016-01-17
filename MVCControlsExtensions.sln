@@ -38,6 +38,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCControlsExtensions.KO.Te
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCControlsExtensions.NG.Tests", "tests\MVCControlsExtensions.NG.Tests\MVCControlsExtensions.NG.Tests.csproj", "{611E7CB6-332E-4627-8797-C731FA4C37F6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCControlsExtensions.Shared", "src\MVCControlsExtensions.Shared\MVCControlsExtensions.Shared.csproj", "{18718A5D-55D9-4548-89BA-0361C11CE257}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -76,6 +78,10 @@ Global
 		{611E7CB6-332E-4627-8797-C731FA4C37F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{611E7CB6-332E-4627-8797-C731FA4C37F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{611E7CB6-332E-4627-8797-C731FA4C37F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18718A5D-55D9-4548-89BA-0361C11CE257}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18718A5D-55D9-4548-89BA-0361C11CE257}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18718A5D-55D9-4548-89BA-0361C11CE257}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18718A5D-55D9-4548-89BA-0361C11CE257}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -89,59 +95,6 @@ Global
 		{E232495A-75C8-46B6-A331-6A9F110083B5} = {DB16AF29-D8F9-42D0-B1EC-62DD961AB43A}
 		{47C1F7C9-0A99-46F3-A3D1-8CB39E17DCA2} = {EA72953C-C736-4C7B-914E-B3EB7DE7CFD2}
 		{611E7CB6-332E-4627-8797-C731FA4C37F6} = {EA72953C-C736-4C7B-914E-B3EB7DE7CFD2}
-	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 13
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://hasmukhlalpatel.visualstudio.com/defaultcollection
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = MVCControlsExtensions.UnitTests\\MVCControlsExtensions.UnitTests.csproj
-		SccProjectTopLevelParentUniqueName1 = MVCControlsExtensions.sln
-		SccProjectName1 = MVCControlsExtensions.UnitTests
-		SccLocalPath1 = MVCControlsExtensions.UnitTests
-		SccProjectUniqueName2 = MVCControlsExtensions\\MVCControlsExtensions.csproj
-		SccProjectTopLevelParentUniqueName2 = MVCControlsExtensions.sln
-		SccProjectName2 = MVCControlsExtensions
-		SccLocalPath2 = MVCControlsExtensions
-		SccProjectUniqueName3 = MVCControlsExtensions.KO\\MVCControlsExtensions.KO.csproj
-		SccProjectTopLevelParentUniqueName3 = MVCControlsExtensions.sln
-		SccProjectName3 = MVCControlsExtensions.KO
-		SccLocalPath3 = MVCControlsExtensions.KO
-		SccProjectUniqueName4 = MVCControlsExtensions.NG\\MVCControlsExtensions.NG.csproj
-		SccProjectTopLevelParentUniqueName4 = MVCControlsExtensions.sln
-		SccProjectName4 = MVCControlsExtensions.NG
-		SccLocalPath4 = MVCControlsExtensions.NG
-		SccProjectUniqueName5 = src\\MVCControlsExtensions\\MVCControlsExtensions.csproj
-		SccProjectTopLevelParentUniqueName5 = MVCControlsExtensions.sln
-		SccProjectName5 = src/MVCControlsExtensions
-		SccLocalPath5 = src\\MVCControlsExtensions
-		SccProjectUniqueName6 = demo\\MvcExtensions.Demo\\MvcExtensions.Demo.csproj
-		SccProjectTopLevelParentUniqueName6 = MVCControlsExtensions.sln
-		SccProjectName6 = demo/MvcExtensions.Demo
-		SccLocalPath6 = demo\\MvcExtensions.Demo
-		SccProjectUniqueName7 = tests\\MVCControlsExtensions.UnitTests\\MVCControlsExtensions.UnitTests.csproj
-		SccProjectTopLevelParentUniqueName7 = MVCControlsExtensions.sln
-		SccProjectName7 = tests/MVCControlsExtensions.UnitTests
-		SccLocalPath7 = tests\\MVCControlsExtensions.UnitTests
-		SccProjectUniqueName8 = demo\\Mvc5Extensions.Demo\\Mvc5Extensions.Demo.csproj
-		SccProjectTopLevelParentUniqueName8 = MVCControlsExtensions.sln
-		SccProjectName8 = demo/Mvc5Extensions.Demo
-		SccLocalPath8 = demo\\Mvc5Extensions.Demo
-		SccProjectUniqueName9 = src\\MVCControlsExtensions.KO\\MVCControlsExtensions.KO.csproj
-		SccProjectTopLevelParentUniqueName9 = MVCControlsExtensions.sln
-		SccProjectName9 = src/MVCControlsExtensions.KO
-		SccLocalPath9 = src\\MVCControlsExtensions.KO
-		SccProjectUniqueName10 = src\\MVCControlsExtensions.NG\\MVCControlsExtensions.NG.csproj
-		SccProjectTopLevelParentUniqueName10 = MVCControlsExtensions.sln
-		SccProjectName10 = src/MVCControlsExtensions.NG
-		SccLocalPath10 = src\\MVCControlsExtensions.NG
-		SccProjectUniqueName11 = tests\\MVCControlsExtensions.KO.Tests\\MVCControlsExtensions.KO.Tests.csproj
-		SccProjectTopLevelParentUniqueName11 = MVCControlsExtensions.sln
-		SccProjectName11 = tests/MVCControlsExtensions.KO.Tests
-		SccLocalPath11 = tests\\MVCControlsExtensions.KO.Tests
-		SccProjectUniqueName12 = tests\\MVCControlsExtensions.NG.Tests\\MVCControlsExtensions.NG.Tests.csproj
-		SccProjectTopLevelParentUniqueName12 = MVCControlsExtensions.sln
-		SccProjectName12 = tests/MVCControlsExtensions.NG.Tests
-		SccLocalPath12 = tests\\MVCControlsExtensions.NG.Tests
+		{18718A5D-55D9-4548-89BA-0361C11CE257} = {DB16AF29-D8F9-42D0-B1EC-62DD961AB43A}
 	EndGlobalSection
 EndGlobal
